@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bioethics Review – Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .article-text { font-family: 'Merriweather', serif; }
+  </style>
+</head>
+
+<body class="bg-gray-50">
+
+  <!-- SIDEBAR (ocult per defecte) -->
+  <aside id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 z-50">
+    <div class="p-6 border-b">
+      <h2 class="text-xl font-bold text-[#1E3A8A]">Editions</h2>
+    </div>
+
+    <nav class="p-4 space-y-3">
+      <button data-filter="2025" class="w-full text-sm text-left px-3 py-2 rounded hover:bg-gray-100">Vol. 26. No.1&2 2025</button>
+      <button data-filter="2024" class="w-full text-sm text-left px-3 py-2 rounded hover:bg-gray-100">Vol. 25. No.1 2024</button>
+      <button data-filter="2023" class="w-full text-sm text-left px-3 py-2 rounded hover:bg-gray-100">Vol. 24. No.1 2023</button>
+    </nav>
+  </aside>
+
+  <!-- OVERLAY (quan el menú està obert) -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-40 hidden z-40" data-toggle="sidebar"></div>
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md border-b border-gray-200 sticky top-0 z-30">
+      <div class="max-w-full bg-[#3F79A1] py-5 px-3 flex flex-row justify-center gap-8">
+          <button data-toggle="sidebar" class="w-1/12 text-[#1E3A8A] focus:outline-none">
+              <i class="bi bi-list text-white text-3xl"></i>
+          </button>
+          <h1 class="w-11/12 text-white text-2xl text-center font-bold">Formosan Journal of Medical Humanities<br><span class="text-sm font-normal">台 灣 醫 學 人 文 學 刊</span></h1>
+      </div>
+  </nav>
+
+  <!-- HERO -->
+  <!-- header class="bg-[#3F79A1] text-white py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl font-bold mb-4">Formosan Journal of Medical Humanities</h1>
+      <p class="text-lg opacity-90">
+        A peer‑reviewed academic journal exploring the ethical, philosophical, and humanistic dimensions of modern medicine.
+      </p>
+    </div>
+  </header -->
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-6xl mx-auto px-6 py-12">
+
+    <h2 class="text-3xl font-bold text-[#1E3A8A] mb-10">Available Editions</h2>
+
+    <!-- GRID D’EDICIONS -->
+    <div id="editionGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+<!-- TARGETA EDICIÓ 2025 -->
+<div class="edition-card" data-year="2025">
+  <div class="bg-white shadow-lg rounded-xl p-8 hover:shadow-xl transition">
+    <h3 class="text-2xl font-semibold text-[#1E3A8A] mb-4">Edition 2025</h3>
+
+    <p class="text-gray-700 article-text mb-4">
+      A comprehensive exploration of AI, cyber‑medicine, autonomy, and contemporary bioethical challenges.
+    </p>
+
+    <h4 class="text-lg font-semibold text-gray-800 mb-2">Articles included:</h4>
+
+    <ul class="list-disc list-inside text-gray-700 article-text text-sm space-y-1 mb-6">
+      <li><a href="/articles/2024/editors-desk.html" class="text-[#1E3A8A] hover:underline">From Editor’s Desk</a></li>
+      <li><a href="/articles/2024/contributors.html" class="text-[#1E3A8A] hover:underline">Contributors</a></li>
+      <li><a href="1-article.html" class="text-[#1E3A8A] hover:underline">Bioethical Concerns of Emerging AI Technologies</a></li>
+      <li><a href="2-article.html" class="text-[#1E3A8A] hover:underline">Medical Profession Between Conscience and Obligations</a></li>
+      <li><a href="/articles/2024/als-autonomy.html" class="text-[#1E3A8A] hover:underline">Respect for Autonomy in ALS</a></li>
+      <li><a href="/articles/2024/muslim-autonomy.html" class="text-[#1E3A8A] hover:underline">Autonomy Among Muslim Patients in Malaysia</a></li>
+      <li><a href="/articles/2024/organ-transplant.html" class="text-[#1E3A8A] hover:underline">Ethics of Organ Transplantation</a></li>
+      <li><a href="/articles/2024/maxwell-case.html" class="text-[#1E3A8A] hover:underline">Maxwell’s Case</a></li>
+      <li><a href="/articles/2024/withdrawing-life-support.html" class="text-[#1E3A8A] hover:underline">Withdrawing Life Support</a></li>
+      <li><a href="/articles/2024/introductions.html" class="text-[#1E3A8A] hover:underline">Introductions</a></li>
+    </ul>
+    <!--
+    <a href="/edicions/2024.html"
+       class="inline-block bg-[#1E3A8A] text-white px-5 py-2 rounded-lg hover:bg-[#162c66] transition">
+      View Edition →
+    </a>
+    -->
+  </div>
+</div>
+
+      <!-- TARGETA EDICIÓ 2024 -->
+<div class="edition-card" data-year="2024">
+  <div class="bg-white shadow-lg rounded-xl p-8 hover:shadow-xl transition">
+    <h3 class="text-2xl font-semibold text-[#1E3A8A] mb-4">Edition 2024</h3>
+
+    <p class="text-gray-700 article-text mb-4">
+      XXXXXXXXXX XXXXXXXXXXXXX XXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXX
+    </p>
+
+    <h4 class="text-lg font-semibold text-gray-800 mb-2">Articles included:</h4>
+
+    <ul class="list-disc list-inside text-gray-700 article-text text-sm space-y-1 mb-6">
+      <li><a href="/articles/2023/editorial.html" class="text-[#1E3A8A] hover:underline">XXXXXXX XXXXXXXXX XXXXXXX</a></li>
+      <li><a href="/articles/2023/genetic-ethics.html" class="text-[#1E3A8A] hover:underline">XXX XXXXXX XXXXXXXXXX XXXXXXXXXXXXX</a></li>
+      <li><a href="/articles/2023/ai-clinical-decision.html" class="text-[#1E3A8A] hover:underline">XXXXXX XXXXX XXXXXXXXX XXXXXXX XXXX</a></li>
+      <li><a href="/articles/2023/end-of-life.html" class="text-[#1E3A8A] hover:underline">XX XXXXXX XXXXXXXX XXXXXX</a></li>
+      <li><a href="/articles/2023/public-health-bioethics.html" class="text-[#1E3A8A] hover:underline">XX XXXXXXXX XXXX XXXXXX</a></li>
+    </ul>
+    <!--
+    <a href="/edicions/2024.html"
+       class="inline-block bg-[#1E3A8A] text-white px-5 py-2 rounded-lg hover:bg-[#162c66] transition">
+      View Edition →
+    </a>
+    -->
+  </div>
+</div>
+
+      <!-- TARGETA EDICIÓ 2022 -->
+<div class="edition-card" data-year="2023">
+  <div class="bg-white shadow-lg rounded-xl p-8 hover:shadow-xl transition">
+    <h3 class="text-2xl font-semibold text-[#1E3A8A] mb-4">Edition 2023</h3>
+
+    <p class="text-gray-700 article-text mb-4">
+      XXXXXXXXXXXXX XXXXXXXXXXXXXX XXXXXXXXXXXXXXX XXXXXXX XXX
+    </p>
+
+    <h4 class="text-lg font-semibold text-gray-800 mb-2">Articles included:</h4>
+    <ul class="list-disc list-inside text-gray-700 article-text text-sm space-y-1 mb-6">
+      <li><a href="/articles/2022/editorial.html" class="text-[#1E3A8A] hover:underline">XXXXXXXXXXXXXXXXXX</a></li>
+      <li><a href="/articles/2022/philosophy-of-care.html" class="text-[#1E3A8A] hover:underline">XXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXX</a></li>
+      <li><a href="/articles/2022/bioethics-technology.html" class="text-[#1E3A8A] hover:underline">XXXXXXXXX XXXXXXXXXXXXXX XXXXXXXX</a></li>
+      <li><a href="/articles/2022/clinical-narratives.html" class="text-[#1E3A8A] hover:underline">XXXXXXXX XXXXXX XXXXXXXXXX XXXXXXXXX</a></li>
+      <li><a href="/articles/2022/medical-anthropology.html" class="text-[#1E3A8A] hover:underline">XXXXXXXXXXXXXXXXXXX</a></li>
+    </ul>
+    <!--
+    <a href="/edicions/2023.html" class="inline-block bg-[#1E3A8A] text-white px-5 py-2 rounded-lg hover:bg-[#162c66] transition">
+      View Edition →
+    </a>
+    -->
+  </div>
+</div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-100 border-t border-gray-300 py-6 mt-10">
+    <div class="max-w-5xl mx-auto px-6 text-center text-gray-600 text-sm">
+      © 2024 Bioethics Review — Formosan Journal of Medical Humanities
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+  const editionCards = document.querySelectorAll('.edition-card');
+
+  // Obrir/tancar sidebar
+  document.querySelectorAll('[data-toggle="sidebar"]').forEach(el => {
+    el.addEventListener('click', () => {
+      const isOpen = !sidebar.classList.contains('-translate-x-full');
+
+      if (isOpen) {
+        sidebar.classList.add('-translate-x-full');
+        overlay.classList.add('hidden');
+      } else {
+        sidebar.classList.remove('-translate-x-full');
+        overlay.classList.remove('hidden');
+      }
+    });
+  });
+
+  // Filtrar edicions
+  document.querySelectorAll('[data-filter]').forEach(button => {
+    button.addEventListener('click', () => {
+      const year = button.getAttribute('data-filter');
+
+      editionCards.forEach(card => {
+        if (year === 'all' || card.dataset.year === year) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Tancar sidebar després de filtrar
+      sidebar.classList.add('-translate-x-full');
+      overlay.classList.add('hidden');
+    });
+  });
+  </script>
+
+</body>
+</html>
